@@ -201,8 +201,8 @@ nav a:hover .line1 {
 
 .homeCenter .row h1 {
     font-family: Poppins-Regular;
-    font-size: 8.7rem;
-    line-height: 15vh;
+    font-size: 6.5rem;
+    line-height: 20vh;
 }
 
 .homeCenter .row #downArrow {
@@ -357,11 +357,39 @@ nav a:hover .line1 {
 
 .workImagesContainer {
     overflow: hidden;
+    position: relative;
     display: flex;
     align-items: center;
     justify-self: center;
 }
 
+.workImagesContainerTextRow {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    bottom: 7%;
+    left: 10%;
+    z-index: 5;
+    /* background-color: red; */
+}
+
+.workImagesContainerTextRow span {
+    font-size: 130%;
+    background-color: #fff;
+    padding: 2vh 2.5vw;
+    border-radius: 5vh;
+    color: #333;
+    margin-right: 1vw;
+}
+
+.workImagesContainerTextRow i {
+    font-size: 130%;
+    color: #333;
+    background-color: white;
+    padding: 2vh;
+    border-radius: 50%;
+}
 
 .workImagesContainer img{
     width: 105%;
@@ -386,36 +414,11 @@ nav a:hover .line1 {
 }
 
 
-
-.cursor {
-    position: absolute;
-    width: 25vw;
+.sample {
+    height: 100vh;
+    width: 100vw;
     background-color: red;
-    position: fixed;
-    top: 0;
-    left: 0;
 }
 
-.cursor .cursorRow {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    gap: 2vw;
-    justify-content: flex-start;
-}
 
-.cursor .cursorRow .cursorRowCircle {
-    width: 6vh;
-    height: 6vh;
-    border-radius: 20px;
-    border: 3px solid black;
-    background-color: white;
-}
 
-.cursor .cursorRow .cursorRowCapsule {
-    /* width: 40%; */
-    border-radius: 30px;
-    padding: 2vh 3vw;
-    color: white;
-    background-color: black;
-}

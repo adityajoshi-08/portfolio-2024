@@ -30,6 +30,25 @@
         </div>
 
         <div [data-scroll-container] class="home">
+            <!-- <div class="cursor" data-scroll data-scroll-sticky data-scroll-target>
+                <div class="">
+                    <div class="cursorRow">
+                        <div class="cursorRowCircle">
+                        </div>
+                        <div class="cursorRowCapsule">
+                            <span>Hack The League</span>
+                        </div>
+                    </div>
+                    <div class="cursorImages">
+                        <img src="./Assets/images/work/HTL/image1.png" alt="">
+                        <img src="./Assets/images/work/HTL/image2.png" alt="">
+                        <img src="./Assets/images/work/HTL/image3.png" alt="">
+                        <img src="./Assets/images/work/HTL/image4.png" alt="">
+                    </div>
+                </div>
+
+                <div class=""></div>
+            </div> -->
             <nav>
                 <a href="">
                     aditya-joshi 
@@ -46,7 +65,7 @@
                     <span class="line1"></span>
                     <span class="line2"></span>
                 </a>
-                <a href="" target='_blank'>
+                <a href="./links" target='_blank'>
                     links
                     <span class="line1"></span>
                     <span class="line2"></span>
@@ -55,7 +74,7 @@
 
             <div class="homeCenter">
                 <div class="row">
-                    <h1>gm, i'm a developer &</h1>
+                    <h1>gm, i<span class="slantPurple">'</span>m a developer &</h1>
                 </div>
                 <div class="row">
                     <img id="downArrow" src="./Assets/images/down-arrow.040970d7.svg" alt="">
@@ -92,25 +111,26 @@
                 <div class="workImages" id="workImages1">
 
                     <div id="workImagesContainer1" class="workImagesContainer" >
-                        <img data-scroll data-scroll-speed="-1.5" src="./Assets/images/work/HTL.png" alt="">
+                        <img data-index="0" data-scroll data-scroll-speed="-1.5" src="./Assets/images/work/HTL.png" alt="">
+                        <div class="workImagesContainerTextRow">
+                            <span>Hack The League</span>
+                            <i class="ri-arrow-right-up-line"></i>
+                        </div>
                     </div>
                     
                     <div id="workImagesContainer2" class="workImagesContainer" >
-                        <img data-scroll data-scroll-speed="-1.5" src="./Assets/images/work/API Day Jaipur.png" alt="">
+                        <img data-index="1" data-scroll data-scroll-speed="-1.5" src="./Assets/images/work/API Day Jaipur.png" alt="">
+                        <div class="workImagesContainerTextRow">
+                            <span>API Day Jaipur</span>
+                            <i class="ri-arrow-right-up-line"></i>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="cursor">
-                <div class="cursorRow">
-                    <div class="cursorRowCircle">
-                    </div>
-                    <div class="cursorRowCapsule">
-                        <span>Hack The League</span>
-                    </div>
-                </div>
-            </div>
+            <div class="sample"></div>
         </div>
+        
         
     </div>
 
@@ -119,6 +139,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.esm.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./script.js"></script>
 </body>
 </html>

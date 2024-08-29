@@ -53,7 +53,7 @@ function loaderAnimation() {
     tl.to('.green', {
         height: '0%',
         top: 0,
-        duration: 0.5,
+        duration: 3,
         ease: Circ.easeInOut,
     })
 
@@ -67,9 +67,37 @@ function loaderAnimation() {
         fill: '#6312EC',
         // delay: -1,
     })
+
+
 }
 
 // loaderAnimation();
+
+function imageryAnimation() {
+    var tl2 = gsap.timeline({scrollTrigger: {
+        trigger: '.imagery',
+        scroller: 'body',
+        scrub: true,
+        start: '0% 100%',
+        end: '10% 30%',
+        markers: true,
+    }});
+
+    tl2.to('.imageryRight .imageryImgContainer:nth-child(1)', {
+        transform: 'translate(-30%, -10%) rotate(1.5deg)',
+        duration: 8,
+    }, "imageryRotate")
+    tl2.to('.imageryRight .imageryImgContainer:nth-child(2)', {
+        transform: 'translate(-5%, 5%) rotate(1.5deg)',
+        duration: 8,
+    }, "imageryRotate")
+    tl2.to('.imageryRight .imageryImgContainer:nth-child(3)', {
+        transform: 'translate(30%, 20%)rotate(1.5deg)',
+        duration: 8,
+    }, "imageryRotate")
+}
+
+imageryAnimation();
 
 function locoInitialise(){
     const scroll = new LocomotiveScroll({
@@ -78,4 +106,10 @@ function locoInitialise(){
 });
 }
 
-locoInitialise();
+// locoInitialise();
+
+
+
+
+
+
